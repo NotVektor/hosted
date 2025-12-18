@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test1</title>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/themes.css">
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.css">
+</head>
+
+
+<body>
+    <div id="header_container">
+        <div id="left_container">
+        </div>
+
+        <div id="right_container" >
+            <button id="toggle_theme" class="btn btn-outline-secondary">
+                <i class="bi bi-moon-fill"></i>
+            </button>
+            <button id="toggle-theme" class="btn btn-outline-secondary">
+                <i class="bi"></i>
+            </button>
+
+            <span id="theme-source"></span>
+        </div>
+    </div>
+
+    <div id="center_container">
+        <div id="slide_container">
+            <div id="slide_1" class="slide">Nigga</div>
+            <div id="slide_2" class="slide"></div>
+            <div id="slide_3" class="slide"></div>
+            <div id="slide_4" class="slide"></div>
+        </div>
+    </div>
+    
+    <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+    <script src="/js/theme.js"></script>
+</body>
+
+</html>
