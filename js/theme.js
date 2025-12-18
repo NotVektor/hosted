@@ -1,5 +1,5 @@
 const html = document.documentElement
-const btn = document.getElementById("toggle")
+const btn = document.getElementById("toggle_theme")
 const icona = btn.querySelector("i")
 
 btn.onclick = () => {
