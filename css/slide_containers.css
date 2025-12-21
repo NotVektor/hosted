@@ -1,0 +1,49 @@
+* {
+    overflow: hidden;          /* hides anything outside */
+    white-space: nowrap;       /* keep text on one line */
+    text-overflow: "";   /* show "..." when truncated */
+}
+
+.slide_container.introduzione .slide_1,
+.slide_container.storia .slide_1 {
+    background-image: url("/images/citta_medievale.jpg");
+
+    .text_container {
+        padding-top: 30vh;
+        padding-bottom: 5vh;
+
+        h1, h2, h3 {
+            text-align: center;
+            color: white;
+            font-family: "Rubik", sans-serif;
+            font-optical-sizing: auto;
+            
+            font-style: normal;
+        }
+
+        h1 {
+            font-size: 70px;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        h3 {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        .spacing {
+            height: 30vh;
+        }
+    }
+}
+
+.slide_container.storia {
+    .slide_2 {
+        color: blanchedalmond;
+    }
+}
