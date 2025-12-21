@@ -1,6 +1,19 @@
-body {
-    color-scheme: light dark;
+@import url("/bootstrap-5.3.8-dist/css/bootstrap.css");
+* {
     transition: 
         background 1s ease-in-out, 
         color 1s ease-in-out;
+}
+
+body {
+    color-scheme: light dark;
+}
+
+[data-bs-theme=dark] #header_container {
+    color: var(--bs-secondary-bg);
+    background-color: var(--bs-secondary-bg);
+}
+
+[data-bs-theme=dark] #center_container {
+    background-color: var(--bs-secondary-bg);
 }
