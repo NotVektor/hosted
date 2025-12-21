@@ -9,7 +9,12 @@
 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/themes.css">
+    <link rel="stylesheet" href="/css/slide_containers.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
 </head>
 
@@ -24,17 +29,17 @@
         <div id="right_container">
 
             <div class="btn-group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                <label class="btn btn-outline-success" for="btnradio1">Introduzione</label>
+                <input type="radio" class="btn-check" id="n_slide_container_radio1" autocomplete="off" name="n_slide_container" value="introduzione" checked>
+                <label class="btn btn-outline-success" for="n_slide_container_radio1">Introduzione</label>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn btn-outline-success" for="btnradio2">Storia</label>
+                <input type="radio" class="btn-check" id="n_slide_container_radio2" autocomplete="off" name="n_slide_container" value="storia">
+                <label class="btn btn-outline-success" for="n_slide_container_radio2">Storia</label>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                <label class="btn btn-outline-success" for="btnradio3">Ed. Civ.</label>
+                <input type="radio" class="btn-check" id="n_slide_container_radio3" autocomplete="off" name="n_slide_container" value="civica">
+                <label class="btn btn-outline-success" for="n_slide_container_radio3">Ed. Civ.</label>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio4" autocomplete="off">
-                <label class="btn btn-outline-success" for="btnradio4">Storia</label>
+                <input type="radio" class="btn-check" id="n_slide_container_radio4" autocomplete="off" name="n_slide_container" value="letteratura">
+                <label class="btn btn-outline-success" for="n_slide_container_radio4">Letteratura</label>
             </div>
 
             <button id="toggle_theme" class="btn btn-outline-light">
@@ -45,44 +50,60 @@
 
     <div id="center_container">
         <div class="slide_container introduzione selected">
-            <div class="slide_1 introduzione selected">
-                <p style="text-align: center;">Lol</p>
+            <div class="slide slide_1 introduzione selected">
+                <div class="upper">
+                    <h1>Comuni e cittadini:</h1>
+                    <h2>Un percorso tra storia, diritti e poesia</h2>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <div class="btn-group btn-group-lg" role="group">
+                        <input type="radio" class="btn-check" id="internal_n_slide_container1" autocomplete="off" name="n_slide_container" value="storia">
+                        <label class="btn btn-outline-light" for="internal_n_slide_container1">Storia</label>
+
+                        <input type="radio" class="btn-check" id="internal_n_slide_container2" autocomplete="off" name="n_slide_container" value="civica">
+                        <label class="btn btn-outline-light" for="internal_n_slide_container2">Ed. Civ.</label>
+
+                        <input type="radio" class="btn-check" id="internal_n_slide_container3" autocomplete="off" name="n_slide_container" value="letteratura">
+                        <label class="btn btn-outline-light" for="internal_n_slide_container3">Letteratura</label>
+                    </div>
+                </div>
             </div>
-            <div class="slide_2 introduzione">
+
+            <div class="slide slide_2 introduzione">
 
             </div>
         </div>
 
         <div class="slide_container storia">
-            <div class="slide_1 storia">
+            <div class="slide slide_1 storia">
 
             </div>
-            <div class="slide_2 storia">
+            <div class="slide slide_2 storia">
                 
             </div>
         </div>
 
         <div class="slide_container civica">
-            <div class="slide_1 civica">
+            <div class="slide slide_1 civica">
 
             </div>
-            <div class="slide_2 civica">
+            <div class="slide slide_2 civica">
                 
             </div>
         </div>
 
         <div class="slide_container letteratura">
-            <div class="slide_1 letteratura">
+            <div class="slide slide_1 letteratura">
 
             </div>
-            <div class="slide_2 letteratura">
+            <div class="slide slide_2 letteratura">
                 
             </div>
         </div>
     </div>
 
     <script src="/bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
-    <script src="/js/theme.js"></script>
+    <script src="/js/themes.js"></script>
     <script src="/js/script.js"></script>
 </body>
 

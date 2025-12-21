@@ -2,18 +2,17 @@
 * {
     transition: 
         background 1s ease-in-out, 
-        color 1s ease-in-out;
+        color 1s ease-in-out,
+        width 1s cubic-bezier( 0.95, 0.05, 0.80, 0.04 ),
+        height 1s cubic-bezier( 0.95, 0.05, 0.80, 0.04 )
 }
 
 body {
     color-scheme: light dark;
 }
 
-[data-bs-theme=dark] #header_container {
-    color: var(--bs-secondary-bg);
-    background-color: var(--bs-secondary-bg);
-}
-
+[data-bs-theme=dark] #header_container,
 [data-bs-theme=dark] #center_container {
+    color: var(--bs-secondary-color);
     background-color: var(--bs-secondary-bg);
 }
