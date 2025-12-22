@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const testoBase =
+        "Come in molti testi medievali, la numerologia biblica gioca un ruolo strutturale fondamentale, " +
+        "ciascuno dei 4 elementi è accompagnato da 4 indicatori, questo è collegato al ";
+
+    const elementi = ["vento", "acqua", "fuoco", "terra"];
+
+    elementi.forEach(elemento => {
+        document.querySelectorAll("span." + elemento).forEach(span => {
+            span.setAttribute("title", testoBase + elemento);
+        });
+    });
+});
+
 // Radios  
 const radios_containers = document.querySelectorAll('input[name="n_slide_container"]')
 const display = document.getElementById('left_container')
@@ -14,9 +28,10 @@ handleChangeContainer.call(document.querySelector('input[name="n_slide_container
 
 
 // Function to handle change slide event
-function selectSlide(container, slide) {
-    // Clear slides
-    Array.from(container.getElementsByClassName(container.classList[1]))
+function handleChangeSlide(container, slide) {
+    // Containering
+    const container_type = container.classList[1]
+    Array.from(container.getElementsByClassName(container_type))
         .forEach(s => s.classList.remove("selected"))
 
     // Apply selected
@@ -24,24 +39,48 @@ function selectSlide(container, slide) {
 }
 
 // Function to create buttons
-function createSlideButtons(container) {
-    display.innerHTML = "" // clear previous buttons
+function createSlideRadioGroup(container) {
+    display.innerHTML = ""
 
     const container_type = container.classList[1]
     const slides = Array.from(container.getElementsByClassName(container_type))
+    
+    const group = document.createElement("div")
+    group.className = "btn-group"
+    group.setAttribute("role", "radiogroup")
 
     slides.forEach((slide, index) => {
-        const btn = document.createElement("button")
-        btn.textContent = `${index + 1}`
-        btn.classList.add("btn", "btn-sm", "btn-outline-primary", "m-1")
-        btn.addEventListener("click", () => {
-            selectSlide(container, slide)
+        const id = `slide_radio_${container_type}_${index}`
+
+        // Radio
+        const input = document.createElement("input")
+        input.type = "radio"
+        input.className = "btn-check"
+        input.name = "slide_selector"
+        input.id = id
+        input.autocomplete = "off"
+        if (index === 0) input.checked = true
+
+        // Label
+        const label = document.createElement("label")
+        label.className = "btn btn-outline-primary"
+        label.setAttribute("for", id)
+        label.textContent = `${index + 1}`
+
+        // Mouse selection
+        input.addEventListener("change", () => {
+            handleChangeSlide(container, slide)
         })
 
-        display.appendChild(btn)
+        group.appendChild(input)
+        group.appendChild(label)
     })
+
+    display.appendChild(group)
 }
 
+
+// Function to handle change slide container event
 function handleChangeContainer() {
     const selected_value = this.value
 
@@ -69,5 +108,5 @@ function handleChangeContainer() {
     selected_slide.classList.add("selected")
 
     // Create buttons dynamically
-    createSlideButtons(selected_container)
+    createSlideRadioGroup(selected_container)
 }

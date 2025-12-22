@@ -4,22 +4,22 @@
     text-overflow: "";   /* show "..." when truncated */
 }
 
+.slide {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+}
+
 .slide_container.introduzione .slide_1,
 .slide_container.storia .slide_1 {
     background-image: url("/images/citta_medievale.jpg");
+    background-size: cover;
 
     .text_container {
         padding-top: 30vh;
         padding-bottom: 5vh;
-
-        h1, h2, h3 {
-            text-align: center;
-            color: white;
-            font-family: "Rubik", sans-serif;
-            font-optical-sizing: auto;
-            
-            font-style: normal;
-        }
+        text-align: center;
 
         h1 {
             font-size: 70px;
@@ -43,7 +43,175 @@
 }
 
 .slide_container.storia {
+    .slide_2,
+    .slide_3,
+    .slide_4 {
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+
     .slide_2 {
-        color: blanchedalmond;
+        background-image: url("/images/firenze_medievale.jpg");
+    }
+
+    .slide_3 {
+        background-image: url();
+    }
+
+    .slide_4 {
+        background-image: url();
+    }
+    }
+}
+
+.slide_container.letteratura {
+    .slide_1 {
+        background-image: url("/images/francesco_predica.jpg");
+        background-position: center;
+        background-size: cover;
+
+        text-align: center;
+        color: white;
+
+        .text_container {
+            padding-top: 30vh;
+            padding-bottom: 5vh;
+            text-align: center;
+            h1 {
+                font-size: 70px;
+                font-weight: 800;
+            }
+
+            h2 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+
+            h3 {
+                font-size: 15px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .slide_2,
+    .slide_3,
+    .slide_4,
+    .slide_5,
+    .slide_6,
+    .slide_7,
+    .slide_8,
+    .slide_9,
+    .slide_10 {
+        h2 {
+            font-size: 40px;
+            font-weight: 600;
+            text-align: center;
+
+            padding-top: 5vh;
+            padding-bottom: 5vh;
+        }
+    }
+
+    .slide_2 {
+        background-image: url("/images/presepe_greccio.jpg");
+    }
+
+    .slide_3 {
+        background-color: gray;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+
+        img {
+            flex: 1;
+        }
+
+        .text_container {
+            padding: 5vh 5vw;
+            flex: 2;
+
+            h1 {
+                text-align: center;
+                padding: 0 0 5vh;
+                font-size: 40px;
+                font-weight: 600;
+            }
+
+            p {
+                text-align: left;
+                font-size: 14px;
+                white-space: wrap;
+
+                span.anafora {
+                    color:gold;
+                }
+
+                span.vento {
+                    color: antiquewhite;
+                }
+
+                span.acqua {
+                    color: aquamarine;
+                }
+
+                span.fuoco {
+                    color: coral;
+                }
+
+                span.terra {
+                    color: saddlebrown
+                }
+            }
+
+
+        }
+    }
+
+    .slide_4 {
+        background-image: url("/images/francesco_natura.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide_5 {
+        background-image: url("/images/cantico_creature.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide_6 {
+        background-image: url("/images/The_Dutch_Proverbs.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide_7 {
+        background-image: url("");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide_8 {
+        background-image: url("");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide_9 {
+        background-image: url("");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slide_10 {
+        background-image: url("/images/francesco_preghiera.jpg");
+        background-position: top;
+        background-size: cover;
     }
 }
