@@ -8,183 +8,264 @@
     <title>Test1</title>
 
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/slide_presets.css">
+    <link rel="stylesheet" type="text/css" href="/css/slide_custom.css">
     <link rel="stylesheet" type="text/css" href="/css/themes.css">
-    <link rel="stylesheet" href="/css/slide_containers.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 
 </head>
 
 
 <body>
-    <div id="header_container">
+    <header id="header_container">
         <div id="left_container" class="btn-group">
-            
-
+            <!--Selettore dinamico-->
         </div>
 
         <div id="right_container">
 
             <div class="btn-group">
-                <input type="radio" class="btn-check" id="n_slide_container_radio1" autocomplete="off" name="n_slide_container" value="introduzione" checked>
-                <label class="btn btn-outline-success" for="n_slide_container_radio1">Introduzione</label>
+                <input type="radio" class="btn-check group_btn" id="n_slide_container_radio1" autocomplete="off"
+                    name="n_slide_container" value="1" checked>
+                <label class="btn btn-outline-success" for="n_slide_container_radio1">Presentazione</label>
 
-                <input type="radio" class="btn-check" id="n_slide_container_radio2" autocomplete="off" name="n_slide_container" value="storia">
-                <label class="btn btn-outline-success" for="n_slide_container_radio2">Storia</label>
-
-                <input type="radio" class="btn-check" id="n_slide_container_radio3" autocomplete="off" name="n_slide_container" value="civica">
-                <label class="btn btn-outline-success" for="n_slide_container_radio3">Ed. Civ.</label>
-
-                <input type="radio" class="btn-check" id="n_slide_container_radio4" autocomplete="off" name="n_slide_container" value="letteratura">
-                <label class="btn btn-outline-success" for="n_slide_container_radio4">Letteratura</label>
+                <input type="radio" class="btn-check group_btn" id="n_slide_container_radio2" autocomplete="off"
+                    name="n_slide_container" value="2">
+                <label class="btn btn-outline-success" for="n_slide_container_radio2">Extra</label>
             </div>
 
             <button id="toggle_theme" class="btn btn-outline-light">
                 <i class="bi bi-sun-fill"></i>
             </button>
         </div>
-    </div>
+    </header>
 
     <div id="center_container">
-        <div class="slide_container introduzione selected">
-            <div class="slide slide_1 introduzione selected">
+        <div class="slide_group slide_group1">
+            <div class="slide slide_group1 slide1 title spaced selected">
+                <div></div>
                 <div class="text_container">
-                    <h1>Comuni e cittadini</h1>
-                    <h2>Un percorso tra storia, diritti e poesia</h2>
-                    <div class="spacing"></div>
-                    <h3>di Viktor Kondratiuk</h3>
+                    <h1>Dalle Ceneri alla Luce</h1>
+                    <h2>Andreuccio, Boccaccio e la grande crisi della Chiesa </h2>
                 </div>
+                <h3>di Viktor Kondratiuk</h3>
+            </div>
+            <div class="slide slide_group1 slide2 spaced text-center">
+                <h1>Andreuccio da Perugia</h1>
+                <p>
+                    Nella Napoli angioina del Trecento, il giovane mercante Andreuccio arriva <br>
+                    con cinquecento fiorini d'oro, ingenuo e avido, pronto a vivere una notte <br>
+                    di avventure rocambolesche che cambieranno per sempre la sua vita.
+                </p>
+            </div>
+            <div class="slide slide_group1 slide3 text-end">
+                <h1 class="mb-3">Le tre cadute</h1>
+                <p>
+                    In una sola notte Andreuccio viene <br>
+                    prima truffato da una prostituta che <br>
+                    si finge sua sorella, poi derubato e <br>
+                    gettato in un pozzo nero, e infine <br>
+                    rischia la vita durante un furto nella <br>
+                    tomba di un arcivescovo, perdendo <br>
+                    soldi, dignità e sicurezze.
+                </p>
+            </div>
+            <div class="slide slide_group1 slide4">
+                <h1 class="mb-3">Vivo e Arricchito</h1>
+                <p>
+                    Alla fine della terribile notte Andreuccio <br>
+                    torna a Perugia vivo e arricchito grazie a <br>
+                    un prezioso rubino, avendo perso l'innocenza <br>
+                    ma guadagnato esperienza, cautela e pragmatismo <br>
+                    attraverso i propri errori.
+                </p>
+            </div>
+            <div class="slide slide_group1 slide5 spaced text-center">
+                <h1>Parallelo con la Chiesa</h1>
+                <p>
+                    Come Andreuccio, anche la Chiesa cattolica del Cinquecento vive una crisi profonda e umiliante a
+                    causa della Riforma protestante, <br>
+                    perdendo autorità, accusata di corruzione e lontananza dal popolo, e deve decidere se rinascere o
+                    difendersi.
+                </p>
+            </div>
+            <div class="slide slide_group1 slide6 text-end">
+                <h1 class="mb-3">Il Decameron</h1>
+                <p>
+                    Scritto da Giovanni Boccaccio nel 1353 durante la Peste Nera, <br>
+                    il Decameron ritrae con sguardo realistico e laico l'essere <br>
+                    umano nei suoi difetti ma anche nella sua straordinaria capacità <br>
+                    di imparare dagli errori e di rinascere.
+                </p>
+            </div>
+            <div class="slide slide_group1 slide7 text-center">
+                <h1 class="mb-3">Riforma</h1>
+                <p>
+                    La Riforma Cattolica rappresenta la rinascita di Andreuccio, con la nascita <br>
+                    di nuovi ordini religiosi come gesuiti, cappuccini e teatini che si dedicano <br>
+                    all'educazione e all'assistenza ai poveri, riportando la Chiesa in mezzo al popolo.
+                </p>
             </div>
 
-            <div class="slide slide_2 introduzione">
-                
+            <div class="slide slide_group1 slide8">
+                <h1 class="mb-3">Concilio di Trento</h1>
+                <p>
+                    Il Concilio di Trento impone la residenza dei vescovi, vieta la simonia e <br>
+                    il concubinato, istituisce i seminari e introduce il registro parrocchiale, <br>
+                    avviando una profonda moralizzazione e riorganizzazione interna della Chiesa.
+                </p>
             </div>
-        </div>
 
-        <div class="slide_container storia">
-            <div class="slide slide_1 storia">
-                <div class="text_container">
-                    <h2>I conflitti sociali e politici nei</h2>
-                    <h1>Comuni Medievali</h1>
-                </div>
+            <div class="slide slide_group1 slide9 text-end">
+                <h1 class="mb-3">Compagnia di Gesù</h1>
+                <p>
+                    Fondata da Ignazio di Loyola (approvata 1540), i gesuiti diventano “soldati <br>
+                    di Cristo” mobili, obbedienti al Papa, dediti a educazione e missioni. <br>
+                    <br>
+                    Rappresentano l'aspetto più dinamico e creativo della rinascita della Chiesa.
+                </p>
             </div>
-            <div class="slide slide_2 storia">
-                <h2>Ma cos'è la società comunale?</h2>
-            </div>
-            <div class="slide slide_3 storia">
-                <h2></h2>
-            </div>
-            <div class="slide slide_4 storia">
-                <h2></h2>
-            </div>
-        </div>
 
-        <div class="slide_container civica">
-            <div class="slide slide_1 civica">
+            <div class="slide slide_group1 slide10 text-end">
+                <h1 class="mb-3">I Gesuiti</h1>
+                <p>
+                    I gesuiti diventano i protagonisti della nuova evangelizzazione, <br>
+                    sostituendo le conversioni forzate con istruzione e persuasione, <br>
+                    difendendo gli indigeni nelle Americhe e promuovendo un <br>
+                    approccio rispettoso basato sull'esempio e sull'educazione.
+                </p>
+            </div>
 
-            </div>
-            <div class="slide slide_2 civica">
-                
-            </div>
-        </div>
-
-        <div class="slide_container letteratura">
-            <div class="slide slide_1 letteratura">
-                <h1></h1>
-                <div class="text_container">
-                    <h1>Francesco d'Assisi</h1>
-                    <h2>e il Cantico di frate Sole</h2>
-                </div>
-            </div>
-            <div class="slide slide_2 letteratura">
-                <h2>Francesco d'Assisi e il suo tempo</h2>
-            </div>
-            <div class="slide slide_3 letteratura">
-                <img src="images/cantico_creature_antico.jpg" alt="Cantico">
-                <div class="text_container">
-                    <h1>Cantico delle Creature</h1>
+            <div class="slide slide_group1 slide11 spaced text-center">
+                <div></div>
+                <div>
+                    <h1 class="mb-3">Formazione dei Gesuiti</h1>
                     <p>
-                        <span title="A Dio corrispondono 3 appellativi: altissimo, onnipotente, bon Signore; 3 omaggi: tue so` le laude, la gloria et l'onore; e 3 azioni: benediciate, rengraziate et serviateli.">
-                        Altissimu, onnipotente, bon Signore, tue so' le laude, la gloria e l'honore et onne benedictione. <br>
-                        Ad te solo, Altissimu, se konfàno et nullu homo ène dignu te mentovare.</span><br>
-
-                        <span class="anafora" title="Anafora">Laudato sie, mi' Signore,</span>
-                        cum tucte le tue creature, spetialmente messor lo frate sole, lo qual è iorno, et allumini noi per lui;
-                        et ellu è bellu e radiante cum grande splendore: de te, Altissimo, porta significatione. <br>
-
-                        <span class="anafora" title="Anafora">Laudato si', mi' Signore,</span>
-                        per sora luna e le stelle: in celu l'ài formate clarite et pretiose et belle. <br>
-
-                        <span class="anafora" title="Anafora">Laudato si', mi' Signore,</span>
-                        per frate vento et
-                        per <span class="vento">aere</span>
-                        et <span class="vento">nubilo</span>
-                        et <span class="vento">sereno</span>
-                        et <span class="vento">onne tempo</span>,
-                        per lo quale a le tue creature dài sustentamento. <br>
-
-                        <span class="anafora" title="Anafora">Laudato si', mi' Signore,</span>
-                        per sor'aqua, la quale è multo
-                        <span class="acqua">utile</span>
-                        et <span class="acqua">humile</span>
-                        et <span class="acqua">pretiosa</span>
-                        et <span class="acqua">casta</span>. <br>
-
-                        <span class="anafora" title="Anafora">Laudato si', mi' Signore,</span>
-                        per frate focu, per lo quale ennallumini la nocte, et ello è
-                        <span class="fuoco">bello</span>
-                        et <span class="fuoco">iocundo</span>
-                        et <span class="fuoco">robustoso</span>
-                        et <span class="fuoco">forte</span>. <br>
-
-                        <span class="anafora" title="Anafora">Laudato si', mi' Signore,</span>
-                        per sora nostra matre terra, la quale ne sustenta et governa,
-                        et produce <span class="terra">diversi fructi</span>
-                        con <span class="terra">coloriti flori</span>
-                        et herba. <br>
-
-                        <span class="anafora" title="Anafora">Laudato si', mi' Signore,</span>
-                        per quelli ke perdonano per lo tuo amore, et sostengo infirmitate et tribulatione. <br>
-
-                        Beati quelli che 'l sosterrano in pace, ca da te, Altissimo, sirano incoronati. <br>
-
-                        <span class="anafora" title="Anafora">Laudato si', mi' Signore,</span>
-                        per sora nostra morte corporale, da la quale nullu homo vivente pò scappare:
-                        guai a quelli che morrano ne le peccata mortali. <br>
-
-                        Beati quelli che trovarà ne le tue santissime voluntati,
-                        ka la morte secunda no 'l farrà male. <br>
-
-                        Laudate et benedicete mi' Signore
-                        et ringratiate et serviateli cum grande humilitate. <br>
-
+                        Negli Esercizi Spirituali di Ignazio di Loyola il gesuita pratica <br>
+                        un rigido esame di coscienza mattutino e serale, un autocontrollo <br>
+                        quasi militare dell'anima e una preghiera continua che trasforma <br>
+                        la vita interiore in una disciplina quotidiana misurabile.
                     </p>
                 </div>
-            </div>
-            <div class="slide slide_4 letteratura">
-                
+                <div></div>
             </div>
 
-            <div class="slide slide_5 letteratura">
-                <h2>Analisi del Cantico</h2>
+            <div class="slide slide_group1 slide12 spaced text-center">
+                <h1 class="mb-3">Controriforma</h1>
+                <p>
+                    Accanto alla rinascita, la Controriforma ribadisce con la Professio fidei tridentina <br>
+                    i dogmi cattolici e rafforza gli strumenti repressivi attraverso il Sant'Uffizio e <br>
+                    l'Indice dei libri proibiti per difendere l'ortodossia.
+                </p>
             </div>
-            <div class="slide slide_6 letteratura">
-                <h2>Il ruolo della povertà</h2>
-            </div>
-            <div class="slide slide_7 letteratura">
-                <h2>Linguaggio del Cantico</h2>
-            </div>
-            <div class="slide slide_8 letteratura">
-                <h2>Messaggio per la comunità</h2>
-            </div>
-            <div class="slide slide_9 letteratura">
-                <h2></h2>
-            </div>
-            <div class="slide slide_10 letteratura">
 
+            <div class="slide slide_group1 slide13">
+                <h1 class="mb-3">Conseguenze</h1>
+                <p>
+                    La Controriforma porta a un grande disciplinamento sociale con censura, <br>
+                    maggiore controllo sui comportamenti e ghettizzazione, <br>
+                    scegliendo la prudenza.
+                </p>
+            </div>
+
+            <div class="slide slide_group1 slide14 spaced text-center">
+                <h1 class="mb-3">Conclusione</h1>
+                <p>
+                    Come Andreuccio, la Chiesa vive cadute e rinascita: moralizzazione <br>
+                    e vicinanza al popolo, ma anche Controriforma repressiva. <br>
+                    La vera crescita unisce prudenza e apertura, senza perdere l'umanità.
+                </p>
+            </div>
+        </div>
+        <div class="slide_group slide_group2">
+            <div class="slide slide_group2 slide1 title">
+                <div class="text_container">
+                    <h1>Extra</h1>
+                    <h2>Pasolini e Il Decameron + Fonti
+                        <h3>di Viktor Kondratiuk</h3>
+                </div>
+            </div>
+            <div class="slide slide_group2 slide2 spaced">
+                <h1>Pasolini e il Decameron</h1>
+                <p class="text-end">
+                    Pasolini realizza Il Decameron (1971), primo capitolo della Trilogia della Vita, <br>
+                    per esaltare la vitalità popolare, la sessualità libera e il mondo pre-borghese <br>
+                    contro il consumismo capitalista del suo tempo.<br>
+                    <br>
+                    Attraverso Boccaccio critica l'Italia contemporanea: ipocrisia della Chiesa, <br>
+                    sfruttamento di classe e perdita di innocenza del popolo.
+                </p>
+            </div>
+            <div class="slide slide_group2 slide3">
+                <h1 class="mb-3">Ispirazione di Pasolini</h1>
+                <div class="text_container">
+                    <p>Pasolini non cerca la fedeltà filologica, ma crea un “fresco cinematografico” ispirandosi direttamente alla grande pittura:</p>
+                    <ul>
+                        <li>Giotto di Bondone - Giudizio Universale</li>
+                        <li>Pieter Bruegel il Vecchio - La lotta tra Carnevale e Quaresima e Il trionfo della Morte</li>
+                        <li>Miniature dal Decameron tre-quattrocentesco</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slide slide_group2 slide4 row m-auto">
+                <div class="col-8">
+                    <h1>Perche pagina web?</h1>
+                    <p>
+                        Ho scelto il formato web per rendere il discorso vivo, navigabile e accessibile, <br>
+                        come le novelle del Decameron: non una presentazione rigida, <br>
+                        ma un'esperienza aperta che il pubblico può esplorare liberamente.
+                    </p>
+                </div>
+                <div class="col-4">
+                    <p class="text-end">slide_group2</p>
+                </div>
+            </div>
+            <div class="slide slide_group2 slide5 row m-auto">
+                <h1>Fonti</h1>
+                <div class="col">
+                    <h2>Immagini</h2>
+                    <ol class="text-wrap">
+                        <li>Generato con AI</li>
+                        <li>Fotogramma dal film ononimo, attore: Davoli</li>
+                        <li>Fotogramma dal film ononimo</li>
+                        <li>Fotogramma dal film ononimo</li>
+                        <li>Generato con AI</li>
+                        <li><a href="https://www.enteboccaccio.it/s/ente-boccaccio/item/10250" target="_blank" rel="noopener noreferrer">Ente Nazionale Giovanni Boccaccio</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/en:Jacopo_Bassano" class="extiw" title="w:en:Jacopo Bassano"><span title="Italian painter (1510-1591)">Jacopo Bassano</span></a> - <a href="https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture" class="extiw" title="w:en:Google Arts &amp; Culture"><span title="app and website exploring partner museums">Google Arts &amp; Culture</span></a></li>
+                        <li><a href="https://commons.wikimedia.org/wiki/User:Laurom" target="_blank" rel="noopener noreferrer" title="User:Laurom">Laurom</a> - <span class="int-own-work">Opera propria</span>,</li>
+                        <li><a href="https://www.gesusacerdote.org/la-preghiera-di-ignazio-di-loyola-discepolo-di-dio-e-maestro-degli-uomini/" target="_blank" rel="noopener noreferrer">La preghiera di Ignazio di Loyola</a></li>
+                        <li>Di Wilhelm Lamprecht - <a href="https://it.wikipedia.org/wiki/Pubblico_dominio" target="_blank" rel="noopener noreferrer">Pubblico dominio</a>,</li>
+                        <li>Generato con AI</li>
+                        <li><a href="https://midnightfactory.it/blog/the-vatican-tapes/i-libri-proibiti-che-ti-mandavano-allinferno" target="_blank" rel="noopener noreferrer">I Libri Proibiti Che Ti Mandavano All'Inferno</a></li>
+                        <li>Di <a href="https://es.wikipedia.org/wiki/Francisco_Rizi" target="_blank" rel="noopener noreferrer" title="Francisco Rizi (Pintore barocco spagnolo)">Francisco Rizi</a> - <a href="https://www.museodelprado.es/imagen/alta_resolucion/P01126.jpg" target="_blank" rel="noopener noreferrer">Museo del Prado</a></li>
+                        <li>Generato con AI</li>
+                    </ol>
+                    <h2>Immagini Extra</h2>
+                    <ol>
+                        <li>
+                            <a href="https://en.wikipedia.org/w/index.php?curid=8714869" target="_blank" rel="noopener noreferrer">Decameron - Taddeo Crivelli (1467)</a>
+                        </li>
+                        <li>
+                            <p>
+                                Fotogramma dal film: 
+                                <a href="https://www.centrostudipierpaolopasolinicasarsa.it/notizie/lartista-e-il-sottoproletariato-del-decameron-di-marco-marmeggi/" target="_blank" rel="noopener noreferrer">Pier Paolo Pasolini / Giotto</a>
+                            </p>
+                        </li>
+                        <li>Screenshot</li>
+                        <li>Immagine generica di una libreria</li>
+                    </ol>
+                </div>
+                <div class="col"></div>
+                <div class="col">
+                    <h2>Informazioni</h2>
+                    
+                </div>
             </div>
         </div>
     </div>

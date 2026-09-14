@@ -1,4 +1,11 @@
-@import url("/bootstrap-5.3.8-dist/css/bootstrap.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    overflow: hidden;          /* hides anything outside */
+    white-space: nowrap;       /* keep text on one line */
+    text-overflow: "";   /* show "..." when truncated */
+}
 
 body {
     height: 100vh;
@@ -9,12 +16,17 @@ body {
     gap: 10px;
 
     color: #000;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
     font-size: 20px;
     font-family: sans-serif;
 }
 
 #header_container {
     margin: 0;
+    max-height: 10em;
     width: 100%;
     height: fit-content;
     display: flex;
@@ -31,7 +43,7 @@ body {
 #center_container {
     margin: 0px auto 10px;
     width: 99vw;
-    height: 90%;
+    height: 95%;
 
     display: flex;
     gap: 0px;
@@ -43,26 +55,11 @@ body {
     padding: 5px;
 }
 
-.slide_container {
-    height: 100%;
-    width: 0%;
-    overflow: hidden;
-}
-
-.slide {
-    color: black;
-    border-radius: 10px;
-    height: 0%;
-}
-
-.slide_container.selected {
-    width: 100%;
-}
-
-.slide.selected {
-    height: 100%;
-}
 
 div.centered {
     margin: auto;
+}
+
+ul {
+    list-style: disc inside;
 }

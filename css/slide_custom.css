@@ -1,0 +1,92 @@
+.slide_group.slide_group1 {
+    .slide1 {
+        /* AI */
+        background-image: url("/images/LibroAI.png");
+    }
+
+    .slide2 {
+        background-image: url("/images/Decameron-Davoli.png");
+        
+    }
+
+    .slide3 {
+        background-image: url("/images/Slide2.png");
+    }
+
+    .slide4 {
+        background-image: url("/images/Slide3.png");
+    }
+
+    .slide5 {
+        /* AI */
+        background-image: url("/images/Introduzione.png");
+    }
+
+    .slide6 {
+        /* https://www.enteboccaccio.it/s/ente-boccaccio/item/10250 */
+        background-image: url("/images/Giovanni_Boccaccio.jpg");
+    }
+
+    .slide7 {
+        /* By <a href="https://en.wikipedia.org/wiki/en:Jacopo_Bassano" class="extiw" title="w:en:Jacopo Bassano"><span title="Italian painter (1510–1591)">Jacopo Bassano</span></a> and workshop - <a href="https://en.wikipedia.org/wiki/en:Google_Arts_%26_Culture" class="extiw" title="w:en:Google Arts &amp; Culture"><span title="app and website exploring partner museums">Google Arts &amp; Culture</span></a> — <a rel="nofollow" class="external text" href="//www.google.com/culturalinstitute/asset-viewer/eQFfYQGBVSpE5g">eQFfYQGBVSpE5g</a>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=13360210">Link</a> */
+        background-image: url("/images/Jacopo_Bassano_and_workshop_-_The_Purification_of_the_Temple_-_Google_Art_Project.jpg");
+    }
+
+    .slide8 {
+        /* By <a href="//commons.wikimedia.org/wiki/User:Laurom" title="User:Laurom">Laurom</a>&nbsp;<span class="mw-valign-text-top noprint" typeof="mw:File/Frameless"><a href="//commons.wikimedia.org/wiki/File:Concilio_Trento_Museo_Buonconsiglio.jpg#P170" title="Edit this at Structured Data on Commons"></a></span> - <span class="int-own-work">Self-photographed</span> <a href="//commons.wikimedia.org/wiki/User:Laurom" title="User:Laurom">Laurom</a> Taken on&nbsp;11 November 2009, <a href="https://creativecommons.org/licenses/by-sa/3.0" title="Creative Commons Attribution-Share Alike 3.0">CC BY-SA 3.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=8465486">Link</a> */
+        background-image: url("/images/Concilio_Trento_Museo_Buonconsiglio.jpg");
+    }
+
+    .slide9 {
+        /* https://www.gesusacerdote.org/la-preghiera-di-ignazio-di-loyola-discepolo-di-dio-e-maestro-degli-uomini/ */
+        background-image: url("/images/Sant\'Ignazio\ di\ Loyola.jpg");
+    }
+
+    .slide10 {
+        /* Di Wilhelm Lamprecht - The original hangs in the Raynor Memorial Library at Marquette University, Milwaukee, Wisconsin. I took a photograph on Sept. 19, 2009., Pubblico dominio, https://commons.wikimedia.org/w/index.php?curid=8041258 */
+        background-image: url("/images/Pere_Marquette.jpg");
+    }
+
+    .slide11 {
+        /* AI */
+        background-image: url("/images/FormazioneGesuitiAI2.png");
+    }
+
+    .slide12 {
+        /* https://midnightfactory.it/blog/the-vatican-tapes/i-libri-proibiti-che-ti-mandavano-allinferno */
+        background-image: url("/images/Lindice-dei-libri-proibiti.jpg");
+    }
+
+    .slide13 {
+        /* Por <a href="https://en.wikipedia.org/wiki/es:Francisco_Rizi" class="extiw" title="w:es:Francisco Rizi"><span title="pintor barroco español">Francisco Rizi</span></a> - <a rel="nofollow" class="external autonumber" href="https://www.museodelprado.es/imagen/alta_resolucion/P01126.jpg">[2]</a>, Dominio público, <a href="https://commons.wikimedia.org/w/index.php?curid=31407824">Enlace</a> */
+        background-image: url("/images/Francisco_rizi-auto_de_fe.jpg");
+    }
+
+    .slide14 {
+        background-image: url("/images/ConclusioneAI2.png");
+    }
+}
+
+
+.slide_group.slide_group2 {
+    .slide1 {
+        background-image: url("/images/DecameronMiniaturaTaddeoCrivelli.jpg");
+    }
+
+    .slide2 {
+        background-image: url("/images/pier_paolo_pasolini_decameron_upscayl_2x_high-fidelity-4x.png");
+        
+    }
+
+    .slide3 {
+        background-image: url("/images/carnevale_quaresima_pieter_brugel.jpg");
+    }
+
+    .slide4 {
+        background-image: url("/images/Screenshot.jpg");
+    }
+
+    .slide5 {
+        background-image: url("/images/Scaffale.jpg");
+    }
+}
